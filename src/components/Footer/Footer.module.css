@@ -1,0 +1,163 @@
+.footer {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerFirst {
+  flex: 0.9;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.footerFirstLeft {
+  margin-left: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.footerFirstLeft > * {
+  align-self: flex-start;
+  margin-bottom: 1.7rem;
+}
+
+.footerFirstLeft h3 {
+  font-size: 4.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footerFirstLeftText {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footerFirstRight {
+  display: flex;
+  flex-direction: row;
+}
+.footerFirstRight > * {
+  margin-right: 9rem;
+}
+
+.footerFirstRight p {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.footerFirstRight h6 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.footerFirstRight hr {
+  width: 2rem;
+  border: 1px solid #f76f20;
+  margin-bottom: 1rem;
+}
+
+.footerSecond {
+  flex: 0.1;
+  background-color: #222222;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerSecond > div {
+  margin-left: 7rem;
+}
+
+.footerSecondText {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerSecondText p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #707070;
+  margin-right: 2rem;
+}
+.footerSecondText > div {
+  margin-right: 9rem;
+}
+
+@media (max-width: 1110px) {
+  .footerFirst {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .footerFirstLeft {
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .footerFirstLeft > * {
+    align-self: center;
+  }
+  .footerFirstRight > * {
+    margin-right: 0;
+  }
+  .footerFirstRight {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 878px) {
+  .footerSecond {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerSecondP {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 609px) {
+  .footerSecondP {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .footerFirstRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerFirstRight > * {
+    margin-right: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footerFirstRight p {
+    text-align: center;
+  }
+
+  .footerFirstRight h6 {
+    text-align: center;
+  }
+
+  .footerFirstRight hr {
+    text-align: center;
+  }
+}

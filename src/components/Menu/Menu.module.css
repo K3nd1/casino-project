@@ -1,0 +1,189 @@
+.menu {
+  flex: 0.08;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* FIRST PART */
+.menuFirst {
+  flex: 0.35;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuFirst > * {
+  margin-left: 2rem;
+}
+.menuText {
+  font-size: 1rem;
+  color: #707070;
+  font-weight: 700;
+}
+
+/* second Part */
+
+.menuSecond {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuSecond h3 {
+  color: #fff;
+  font-size: 4.2rem;
+  font-weight: 600;
+}
+
+/* third part */
+
+.menuThird {
+  flex: 0.35;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menuThirdInputs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.menuThirdInput1 {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #585858;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  color: #adadad;
+}
+
+.menuThirdInput1 input {
+  background-color: #585858;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  width: 12.5rem;
+  font-size: 1.4rem;
+  color: #adadad;
+}
+
+.menuThirdInput1 input::placeholder {
+  color: #adadad;
+}
+
+.menuThirdInput2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #585858;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-left: 0.7rem;
+  color: #adadad;
+}
+
+.menuThirdInput2 input {
+  background-color: #585858;
+  border: none;
+  width: 12.5rem;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #adadad;
+}
+
+.menuThirdInput2 input::placeholder {
+  color: #adadad;
+}
+
+.menuThirdButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuThirdButtons button {
+  background-image: linear-gradient(#fd7426, #eb3f19);
+
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 0.7rem;
+  cursor: pointer;
+}
+.menuThirdButtons button:not(:first-child) {
+  margin-right: 0.7rem;
+}
+
+.menuThirdButtons p {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 0.7rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .menuSecond {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menuFirst {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    align-self: center;
+  }
+  .menuThird {
+    margin-bottom: 1rem;
+    align-self: center;
+    margin-left: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .menuFirst {
+    display: none;
+  }
+  .menuThird {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .menuThirdButtons {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .menuThirdInput1 input {
+    width: 9rem;
+  }
+  .menuThirdInput2 input {
+    width: 9rem;
+  }
+  .menuThirdButtons {
+    align-self: center;
+  }
+}

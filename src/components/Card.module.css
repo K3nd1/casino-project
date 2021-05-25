@@ -1,0 +1,15 @@
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 1rem;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+}
