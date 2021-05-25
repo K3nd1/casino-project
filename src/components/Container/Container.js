@@ -115,7 +115,7 @@ function Container() {
     // set resize listener
     window.addEventListener("resize", resizeListener);
 
-    // clean up function
+    // clean up functi
     return () => {
       // remove resize listener
       window.removeEventListener("resize", resizeListener);
